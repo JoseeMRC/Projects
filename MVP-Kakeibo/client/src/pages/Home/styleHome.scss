@@ -1,0 +1,58 @@
+.logo {
+  background-color: var(--base-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.name {
+  width: 350px;
+}
+
+.parte-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+.simbolo-derecha,
+.nombre-derecha {
+  width: 150px;
+}
+
+.base {
+  background-color: var(--base-color) !important;
+}
+
+@media (width <= 768px) {
+  .logo img {
+    width: 200px;
+  }
+
+  .parte-derecha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+
+    p {
+      font-size: 0.8rem;
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+
+    .pass-forgot {
+      margin-top: 20px;
+    }
+  }
+}

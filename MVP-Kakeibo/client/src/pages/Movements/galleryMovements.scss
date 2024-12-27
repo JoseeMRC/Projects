@@ -1,0 +1,84 @@
+.button-app {
+  margin-right: 5px;
+  border: none;
+}
+.content-column-movements {
+  @media (max-width: 768px) {
+    font-size: 0.8em !important;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+  }
+}
+
+.table-movements {
+  border-radius: 30px;
+  background-color: var(--pastelGreenKakeibo);
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  @media (max-width: 768px) {
+    background-color: white;
+    padding-top: 20px;
+  }
+
+  button {
+    border: none;
+    margin-left: auto;
+    @media (max-width: 768px) {
+      width: auto;
+    }
+  }
+
+  .td-30 {
+    width: 30%;
+    text-align: center;
+  }
+  .td-10 {
+    width: 10%;
+    text-align: center;
+  }
+
+  p {
+    margin-block: auto;
+  }
+
+  tr:hover {
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la fila */
+    background-color: #f0f0f0; /* Cambiar el color de fondo al pasar sobre la fila */
+    border-radius: 30px;
+    @media (max-width: 768px) {
+      border-radius: 15px;
+      background-color: var(
+        --pastelGreenKakeibo
+      ); /* Cambiar el color de fondo al pasar sobre la fila */
+    }
+  }
+
+  .movement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10px ;
+  }
+
+  .icon-container {
+    @media (max-width: 768px) {
+      width: 40px;
+      height: auto;
+      border-radius: 15px;
+      font-size: 2em !important;
+    }
+  }
+}
+
+//CLASES DE UTILIDAD
+
+.border-left-row {
+  border-left: solid 3px var(--darkGreenKakeibo);
+}

@@ -1,0 +1,10 @@
+.main-container {
+  margin: 50px;
+  background-color: var(--pastelGreenKakeibo);
+  box-shadow: 0 5px 10px 3px var(--grayKakeibo);
+  border-radius: 30px;
+
+  .areatext {
+    width: 85%;
+  }
+}

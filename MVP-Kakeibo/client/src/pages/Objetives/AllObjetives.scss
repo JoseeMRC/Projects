@@ -1,0 +1,28 @@
+.add-more-button {
+  color: black;
+  background-color: var(--yellowKakeibo);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: -25px; 
+  transition: transform 0.3s ease-in-out, scale 0.3s;
+}
+
+.add-more-button:hover {
+  box-shadow: 0 2px 8px 2px var(--lightGreenKakeibo);;
+  transition: all 0.2s ease;
+  transform: scale(1.08);
+}
+
+.icons-CML{
+  margin-bottom: 20px;
+}
+
+.iconsObjs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}

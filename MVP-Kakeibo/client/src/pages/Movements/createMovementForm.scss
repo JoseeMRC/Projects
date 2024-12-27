@@ -1,0 +1,36 @@
+.black {
+  color: black;
+}
+
+.general-div {
+  height: 100dvh;
+}
+
+.selected-icon {
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 30px;
+}
+
+.formularioCreate {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card-objetive,
+.card-category {
+  border: none !important;
+}

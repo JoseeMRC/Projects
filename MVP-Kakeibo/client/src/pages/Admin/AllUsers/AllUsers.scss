@@ -1,0 +1,13 @@
+.table-users {
+    width: 100%;
+    border: 2px solid var(--grayKakeibo);
+    text-align: center;
+    font-size: 14px;
+    background-color: #ffffff66;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  --bs-table-bg: transparent !important;
+}

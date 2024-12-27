@@ -1,0 +1,17 @@
+.input-kakeibo {
+  color: var(--darkGreenKakeibo);
+  font-weight: 500;
+  background-color: white !important;
+  border: none;
+  border-radius: 25px !important;
+  padding: 7px 15px;
+  margin-inline: 10px;
+  box-shadow: 0 0 4px 1px var(--grayKakeibo);
+  width: 300px !important;
+}
+
+.input-kakeibo:focus-visible {
+  box-shadow: 0 0 6px 1px var(--lightGreenKakeibo) !important;
+  outline: none;
+}
+

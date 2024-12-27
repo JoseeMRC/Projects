@@ -1,0 +1,16 @@
+.textarea-kakeibo {
+    color: var(--darkGreenKakeibo);
+    font-weight: 500;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-inline: 10px;
+    box-shadow:  1px 2px 3px 1px var(--grayKakeibo);
+}
+
+.textarea-kakeibo:focus-visible {
+    box-shadow: 0 0 6px 1px var(--lightGreenKakeibo);
+    outline: none;
+    
+}

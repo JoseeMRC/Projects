@@ -1,0 +1,106 @@
+.myButton {
+  color: white;
+  border-radius: 32px;
+  width: 180px;
+  padding: 7px 5px;
+  border: 1px solid var(--lightGreenKakeibo);
+}
+
+// Versión amarillo claro del botón:
+.gold-kakeibo {
+  color: var(--darkGreenKakeibo);
+  background-color: var(--yellowKakeibo);
+  transition: transform 0.3s ease-in-out, scale 0.3s;
+}
+
+.gold-kakeibo:hover {
+  box-shadow: 0 2px 8px 2px var(--lightGreenKakeibo);;
+  transition: all 0.2s ease;
+  transform: scale(1.08);
+}
+.gold-kakeibo:active {
+ 
+  box-shadow: 0 2px 8px 2px var(--lightGreenKakeibo);;
+  transform: scale(1.08);
+  scale: 0.9;
+}
+
+.colorIng {
+  color: #093030;
+}
+.colorGast {
+  color: #FC0606;
+}
+
+.errorBut {
+  position: relative;
+  top: 125px;
+}
+
+
+// Versión Verde oscuro del botón:
+.green-kakeibo {
+  color: white;
+  background-color: var(--lightGreenKakeibo);
+  transition: transform 0.3s ease-in-out, scale 0.3s;
+}
+
+.green-kakeibo:hover {
+  border: 1px solid var(--goldKakeibo);
+  box-shadow: 0 2px 8px 2px var(--goldKakeibo);
+  transition: all 0.2s ease;
+  transform: scale(1.08);
+}
+.green-kakeibo:active {
+  box-shadow: 0 2px 8px 2px var(--goldKakeibo);
+  transform: scale(1.08);
+  scale: 0.9;
+}
+
+.btn-icons-obj{
+  height: 100px;
+  width: 100px;
+  font-size: 3.5rem;
+  color: white !important;
+  background-color: #98CC9F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+@media (max-width: 768px ){
+ .btn-icons-obj {
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+ }
+}
+
+// ----------------------------
+/*.base {
+  color: white;
+  background-color: var(--lightGreenKakeibo);
+  transition: transform 0.3s ease-in-out;
+}
+ .base:hover {
+  box-shadow: 0 3px 12px 2px #b07d1d;
+  transition: all 0.2s ease;
+  transform: scale(1.1);
+}
+
+.base:active {
+  animation: click-animation 0.3s ease;
+}
+
+@keyframes click-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */

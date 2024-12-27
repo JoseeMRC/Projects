@@ -1,0 +1,21 @@
+.admin-ppal{
+  padding: 20px;
+  gap: 20px;
+}
+
+.adminIcons span {
+  font-size: 3rem !important;
+  text-align: center !important;
+}
+
+.admin-option {
+  cursor: pointer;
+}
+
+@media (width < 768px) {
+  .admin-ppal {
+  flex-direction: column;    
+  align-items: center;
+  padding-top: 50px;
+  }
+}

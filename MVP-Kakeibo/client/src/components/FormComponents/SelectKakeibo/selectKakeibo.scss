@@ -1,0 +1,17 @@
+.select-kakeibo{
+  color: var(--darkGreenKakeibo);
+  font-weight: 500;
+  background-color: white !important;
+  border: none;
+  border-radius: 25px;
+  padding: 0 15px;
+  margin-inline: 10px;
+  width: 300px ;
+  height: 40px ;
+  box-shadow: 0 0 4px 1px var(--grayKakeibo);
+}
+
+.select-kakeibo:focus-visible {
+  box-shadow: 0 0 6px 1px var(--lightGreenKakeibo) !important;
+  outline: none;
+}

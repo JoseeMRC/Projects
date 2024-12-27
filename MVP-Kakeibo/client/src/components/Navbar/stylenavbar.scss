@@ -1,0 +1,77 @@
+.nav-ppal{
+  background-color: var(--lightGreenKakeibo) !important;
+  
+
+  .kakeibo-logo {
+      width: 76px;
+      height: 57px;
+  }
+  .kakeibo-letters {
+    height: 40px;
+    object-fit: cover;
+  }
+}
+
+.name-logos{
+  color: var(--yellowKakeibo) !important;
+  /* color: white !important; */
+  font-size: 0.9rem !important;
+}
+
+.nav-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.iconos{
+  color:white;
+  font-size:1.7rem;
+  margin-bottom: 2px;
+}
+
+.active-link {
+  background-color: #dbd951cf !important;
+  color: white !important;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.bell-kakeibo { 
+  color: var(--yellowKakeibo);
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  font-size:1.2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .logos {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar-collapse.show .active-link {
+    background-color: transparent ; 
+    box-shadow: none ;
+    color: inherit ;
+  }
+  
+  .menu-open .active-link {
+    background-color: transparent !important;
+    color: var(--yellowKakeibo) !important;
+    box-shadow: none !important;
+  }
+}
+
+

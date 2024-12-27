@@ -1,0 +1,43 @@
+.general-div {
+  height: 100dvh;
+}
+
+.selected-icon {
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 30px;
+}
+
+.icon {
+  background-color: #98cc9f;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.formularioCreate {
+  background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h1 {
+  background-color: #d9d9d9;
+  padding: 30px;
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}

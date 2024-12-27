@@ -1,0 +1,73 @@
+.nav-ppal{
+  background-color: #2E5139 !important;
+}
+
+.name-logos{
+  color: #FBF197 !important;
+}
+
+.logos{
+  filter: invert(1) brightness(2) contrast(2);
+  width: 24px; 
+  height: 24px;
+}
+
+.logos-bandera{
+  filter: brightness(2) contrast(2);
+  width: 24px; 
+  height: 24px;
+}
+
+.nav-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-around; 
+  width: 100%;
+}
+
+.active-link {
+  background-color: #fbf197b6 !important;
+  color: #2E5139 !important;
+  border-radius: 20px;
+}
+
+.iconos{
+  color:white;
+  font-size:1.7rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+
+  .logos {
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar-collapse.show .active-link {
+    background-color: transparent ; 
+    box-shadow: none ;
+    color: inherit ;
+  }
+  
+  .menu-open .active-link {
+    background-color: transparent !important;
+    color: #fbf197 !important;
+    box-shadow: none !important;
+  }
+
+}

@@ -1,0 +1,82 @@
+.title-createUser{
+  background-color: var(--pastelGreenKakeibo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-title-createUser{
+ padding: 50px;
+}
+
+.main-createUser{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 20px;
+}
+
+.main-box-createUser{
+  width: 800px;
+  padding: 20px;
+  background-color:  var(--pastelGreenKakeibo);
+  box-shadow: 0 10px 10px 5px var(--grayKakeibo);
+  border-radius: 30px;
+}
+
+@media (max-width: 768px ){
+  
+  .title-createUser{
+    background-color: var(--lightGreenKakeibo);
+  }
+  
+  .main-title-createUser{
+    color: white;
+  }
+  
+  .main-createUser{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .main-box-createUser{
+    width: 200px;
+    height: auto;
+    background-color: white;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  .main-section{
+    background-color: var(--lightGreenKakeibo);
+    text-align: center;
+  }
+}
+
+
+
+.error-style:focus {
+  box-shadow: 0 0 6px darkred;
+  border-color: darkred;
+}
+
+.error-style {
+  box-shadow: 0 0 6px darkred;
+  border-color: darkred;
+}
+
+.formulario-registro {
+  background-color: var(--grayKakeibo);
+
+    .errMsg {
+      color:darkred;
+      margin: 5px 20px;
+    }
+}
+

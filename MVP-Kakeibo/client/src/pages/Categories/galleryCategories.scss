@@ -1,0 +1,9 @@
+.contentCard{
+    background-color: var(--pastelGreenKakeibo) !important;
+    border: transparent !important;
+    gap:320px;
+    @media (max-width: 768px) {
+        background-color: white !important
+        
+      }
+}

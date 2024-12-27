@@ -1,0 +1,15 @@
+.kakeibo-modal {
+    .modal-header{
+        border-color: var(--lightGreenKakeibo);
+    }
+    .modal-content{
+        background-color: white;
+    }
+
+    .modal-titulo {
+        color: var(--darkGreenKakeibo);
+        text-align: center;
+        padding-inline: 10px;
+    }  
+}
+
