@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@400;700&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Tangerine", sans-serif;
+  font-size: 12rem;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(146, 146, 151);
+}
+
+h2 {
+  font-family: "Tangerine", sans-serif;
+  font-size: 10rem;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(146, 146, 151);
+}
+
+h3 {
+  font-family: "Tangerine", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: rgb(207, 131, 131);
+  text-shadow: 10px 10px 10px rgb(146, 146, 151);
+}
+
+h4 {
+  font-family: "Tangerine", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(146, 146, 151);
+}
+
+.bg-derecha {
+  background-color: rgba(112, 186, 140, 0.5);
+}
+
+.bg-izquierda {
+  background-color: rgba(112, 186, 140, 0.5);
+}
+
+.card-coleccionist {
+  border: 8px solid rgba(112, 186, 140, 0.5);
+  border-radius: 30px;
+  border-style: outset;
+}
+.card-coleccionist h3 {
+  color: rgb(207, 131, 131);
+}
+
+.card-coleccionist:hover {
+  background-color: rgba(112, 186, 140, 0.5);
+  border: 8px solid rgb(207, 131, 131);
+  scale: 1.1;
+}
+
+@media (width <= 585px) {
+  h1, h2 {
+    font-size: 8rem;
+  }
+  .card-coleccionist {
+    width: 10rem;
+  }
+}
+@media (width <= 450px) {
+  h1, h2 {
+    font-size: 6rem;
+  }
+  h3, h4 {
+    font-size: 3rem;
+  }
+  .card-coleccionist {
+    width: 8rem;
+  }
+}
+@media (width <= 580px) {
+  .create-coleccionist {
+    width: 20rem;
+  }
+  form {
+    width: 350px;
+  }
+}
+@media (width <= 540px) {
+  form input {
+    width: 200px;
+  }
+}
+@media (width <= 530px) {
+  .create-coleccionist {
+    width: 15rem;
+  }
+  img {
+    width: 50px;
+  }
+}/*# sourceMappingURL=addObject.css.map */

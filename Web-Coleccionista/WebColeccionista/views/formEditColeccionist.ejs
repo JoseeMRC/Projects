@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/assets/electric-guitar.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/coleccionist/editColeccionist.css">
+    <title>Coleccionista</title>
+  </head>
+  <body>
+    <%- include('./includes/navbar') %>
+
+  
+    <div class="p-5 text-center">
+      <h2>formulario edición artista</h2>
+    </div>
+
+    <section class="section">
+      <div class="coleccionist d-flex flex-wrap justify-content-center">
+       
+        <div
+        class="card-group  m-5 p-5 pb-5 text-center card-coleccionist"
+          style="width: 38rem;">
+            <div class="card-body">
+      <form 
+      action="/coleccionists/editColeccionist/<%= result.coleccionist_id %>" 
+      method="post" 
+      enctype="multipart/form-data">
+      <div 
+      class="form-floating mb-3 formulario"
+      style="width: 30.5rem;">
+       <input 
+       type="text" 
+       class="form-control caja" 
+       name="interest" 
+       value="<%= result.interest %>"
+       placeholder="Señor de los anillos, coches, motos...">
+       <label for="floatingInput">Interés</label>
+      
+       <div 
+       class="form-floating mb-3"
+       style="width: 30.5rem;">
+        <input 
+        type="text" 
+        class="form-control" 
+        name="email" 
+        value="<%= result.email %>"
+        placeholder="ejemplo@ejemplo.com">
+        <label for="floatingInput">Email</label>
+        </div>
+        <div
+          class="form-floating mb-3"
+          style="width: 30.5rem;">
+           <input 
+           type="text" 
+           class="form-control" 
+           name="description" 
+           value="<%= result.description %>"
+           placeholder="ejemplo@ejemplo.com">
+           <label for="floatingInput">Descripción</label>
+        </div>
+        <div 
+        class="form-floating mb-3"
+        style="width: 30.5rem;">
+        <input 
+        type="text" 
+        class="form-control" 
+        name="number_phone" 
+        value="<%= result.number_phone %>"
+        placeholder="654329087">
+        <label for="floatingInput">Numero de teléfono</label>
+        </div>
+        <div 
+        class="form-floating mb-3"
+        style="width: 30.5rem;">
+         <input 
+         type="text" 
+         class="form-control" 
+         name="first_name" 
+         value="<%= result.first_name %>"
+         placeholder="Juan, Carlos, Felipe...">
+         <label for="floatingInput">Nombre</label>
+        </div>
+        <div 
+         class="form-floating mb-3"
+         style="width: 30.5rem;">
+         <input 
+         type="text" 
+         class="form-control" 
+         name="last_name" 
+         value="<%= result.last_name %>"
+         placeholder="Garcia, Perez, Marin...">
+         <label for="floatingInput">Apellidos</label>
+        </div>
+        <div>
+          <label for="foto">cambia tu imagen</label>
+          <input 
+            id="foto"
+            type="file"
+            name="img"
+            hidden
+          >
+        </div>
+        <button onclick="window.location.href='/coleccionists/oneColeccionistLogged/<%= result.coleccionist_id %>'" class="btn btn-danger pe-4 ps-4 p-2">cancelar</button>
+      
+        <button class="btn btn-danger pe-4 ps-4 p-2">Aceptar</button>
+      </form>
+    </div>
+    </div>
+    </div>
+    </section>
+    <%- include('./includes/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

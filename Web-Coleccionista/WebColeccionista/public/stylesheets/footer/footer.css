@@ -1,0 +1,9 @@
+.bg-footer {
+  background-color: rgb(207, 131, 131);
+}
+
+@media (width <= 600px) {
+  footer {
+    width: 100%;
+  }
+}/*# sourceMappingURL=footer.css.map */

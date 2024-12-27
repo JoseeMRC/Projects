@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/assets/electric-guitar.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/object/editObject.css">
+    <title>Coleccionista</title>
+  </head>
+  <body>
+    <%- include('./includes/navbar') %>
+
+    <div class="p-5 text-center">
+      <h2>Formulario de Edición de un Objeto</h2>
+    </div>
+
+    <section class="section">
+      <div class="coleccionist d-flex flex-wrap justify-content-center">
+        <div
+        class="card-group  m-5 p-5 pb-5 text-center card-coleccionist"
+          style="width: 38rem;">
+            <div class="card-body">
+        
+              <form 
+              action="/objects/editObject/<%= result.object_id %>" 
+              method="post" 
+              enctype="multipart/form-data">
+                <div class="form-floating mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="floatingInput" 
+                    name="name" 
+                    value="<%= result.name %>" 
+                    placeholder="Juan, Raul, Sergio...">
+                    <label for="floatingInput">Nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control" 
+                    id="floatingInput" 
+                    name="year_adquisition" 
+                    value="<%= result.year_adquisition %>" 
+                    placeholder="2019, 2009, 2007...">
+                    <label for="floatingInput">Año de adquisición</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input 
+                    type="text" 
+                    class="form-control"
+                     id="floatingInput" 
+                     name="description"
+                      value="<%= result.description %>" 
+                      placeholder="corren, vuelan, comodas...">
+                    <label for="floatingInput">Descripción</label>
+                </div>
+                <!-- Campo para cargar la imagen -->
+                <div class="form-floating mb-3">
+                    <input
+                     type="file"
+                      class="form-control" 
+                      id="floatingInput"
+                       name="img">
+                    <label for="floatingInput">Imagen</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+            </form>
+            
+    </section>
+
+    <%- include('./includes/footer') %>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Colecciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/coleccionist/subirColeccionist.css">
+  </head>
+  <body>
+    <%- include('./includes/navbar') %>
+    <section class="section">
+      <div class="coleccionist d-flex flex-wrap justify-content-center ">
+       
+          <div
+          class="card-group  m-5 p-5 pb-5 text-center card-coleccionist"
+          style="width: 38rem;">
+            <div class="card-body">
+              <h4>Para poder subir un objeto, debe estar registrado o haber iniciado sesion</h4>
+              <button onclick="window.location.href='/coleccionists/login'" class="btn btn-danger pe-4 ps-4 p-2">LogIn</button>
+              <button onclick="window.location.href='/coleccionists/createColeccionist '" class="btn btn-danger pe-4 ps-4 p-2">Crear cuenta</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
